@@ -93,6 +93,7 @@ body{
 a{
     text-decoration: none;
     color:hsl(170, 45%, 43%);
+    
 }
 .avatar-container{
     display:flex;
@@ -195,7 +196,10 @@ a{
     }
     .header-2-paragraph{
         text-align:justify;
-        line-height: 1;
+        line-height: 1.5;
+    }
+    a{
+        text-align: center;
     }
     .illustration-2{
         width:100%;
