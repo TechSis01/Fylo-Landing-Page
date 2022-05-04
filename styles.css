@@ -1,0 +1,232 @@
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-size:1.6rem;
+    margin-top:2%;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/*NAVIGATION BAR///////////////////////////////////////////////////////////////////////////////////////*/
+#navbar{
+    display:flex;
+    justify-content: space-between
+    
+}
+.logo{
+    padding-left:2%;
+}
+.navbar-side{
+    display:flex;
+    width:20%;
+    justify-content: space-around;
+}
+
+/*HEADER SECTION/////////////////////////////////////////////////////////////////*/
+#header{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.header-paragraph{
+    color:hsl(243, 87%, 12%);
+    font-weight:500;
+    margin-top:8%;
+    line-height:1.5;
+}
+
+.header-paragraph h1{
+    
+    font-family:'Raleway', sans-serif;
+    font-weight:700;
+    color:hsl(243, 87%, 12%);
+}
+.illustration{
+    width:500px;
+
+}
+.header-paragraph input{
+    border:1px solid hsl(0, 0%, 75%);
+    padding:0.6em;
+    border-radius:5%;
+}
+.header-paragraph button{
+    color:white;
+    background-color: hsl(224, 93%, 58%) ;
+    padding:0.6em 7.0em 0.6em 0.6em;
+    border:1px solid hsl(0, 0%, 75%);
+    text-align:center;
+    border-radius:5%;
+}
+/*//////////////////////HEADER SECTION 2///////////////////////////////*/
+#header-2{
+    background-image: url(/fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    display:flex;
+    justify-content: space-around;
+    padding:5% 0;
+    line-height: 1.5;
+}
+.header-2-paragraph h1{
+    font-family:'Raleway', sans-serif;
+    font-weight:700;
+    color:hsl(243, 87%, 12%);
+
+}
+.header-2-paragraph{
+    color:hsl(243, 87%, 12%);
+    font-weight:500;
+}
+.testimonial{
+    margin-top:5%;
+    border:1px solid hsl(0, 0%, 96%);
+    background-color: white;
+    width:55%;
+    padding:5%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px grey;
+}
+a{
+    text-decoration: none;
+    color:hsl(170, 45%, 43%);
+}
+.avatar-container{
+    display:flex;
+    text-align: center;
+    align-items:center ;
+}
+.avatar-container img{
+    border-radius: 100%;
+}
+.illustration-2{
+    width:500px;
+    align-self: center;
+}
+
+/*//////////////////////////////ACCESS////////////////////////////////////////////////////*/
+#access{
+    background-color:#6f2dbd;
+    padding:5% 0;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+}
+.early-access{
+    line-height: 1.5;
+}
+.early-access-2{
+    width:30%;
+    align-self: center;
+}
+.email-container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+.email-container button{
+    width:50%;
+    margin-top:2%;
+    color:white;
+    background-color: hsl(224, 93%, 58%) ;
+    border:1px solid #6f2dbd;
+    padding:2% 10% 2% 2%;
+    border-radius:5%;
+    
+}
+.email-container input{
+    
+    border:1px solid hsl(0, 0%, 75%);
+    padding:0.6em;
+    border-radius:5px;
+    
+}
+/*/////////////////////FOOTER//////////////////////////////*/
+#footer{
+    background-color: #3c096c;
+    color:white;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:5% 5% 8% 2%;
+}
+.footer-img{
+    filter: invert(95%) sepia(5%) saturate(21%) hue-rotate(252deg) brightness(105%) contrast(107%);
+}
+.fa-brands{
+    border:0.5px solid white;
+    border-radius: 100%;
+    padding:2%;
+    margin:2%;
+}
+
+/*////////////////////MEDIA QUERIES/////////////////////////////////////////////////////*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    body{
+        font-size:1.2rem;
+    }
+    #navbar{
+        font-size:0.9rem;
+    }
+    .navbar-side{
+        padding-right: 5%;
+        width:30%;
+    }
+    #header{
+        flex-direction: column-reverse;
+    }
+    .header-paragraph{
+        text-align: center;
+    }
+    .illustration{
+        width:100%;
+    }
+    #header-2{
+        flex-direction: column-reverse;
+
+    }
+    .header-2-paragraph h1{
+        text-align: center;
+    }
+    .header-2-paragraph{
+        text-align:justify;
+        line-height: 1;
+    }
+    .illustration-2{
+        width:100%;
+    }
+    .testimonial{
+        margin-left:20%;
+    }
+    .avatar-img{
+        width:10px;
+    }
+    #access{
+        padding:0 5%;
+        flex-direction: column;
+        padding-bottom: 5%;
+
+    }
+    .early-access h2{
+        font-size: 1.7rem;
+    }
+    .email-container button{
+        width:150%;
+        font-size:1.0rem;
+        padding:10% 5% 10% 2%;
+    }
+    .email-container input{
+        width:130%;
+        padding:0.6em;
+        border-radius:5px;  
+    }
+    ::placeholder{
+        font-size: 1.1rem;
+    }
+    #footer{
+        grid-template-columns:1fr;
+    }
+}
